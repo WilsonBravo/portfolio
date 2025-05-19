@@ -1,1 +1,2 @@
-export { palette } from './colors.style';
+export { darkPalette } from './dark-palette.style';
+export { lightPalette } from './light-palette.style';

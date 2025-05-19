@@ -1,4 +1,5 @@
-import { Box } from '@/common/components/components';
+'use client';
+import { Box, Header } from '@/common/components/components';
 
 export default function Home() {
   return (
@@ -10,21 +11,10 @@ export default function Home() {
         justifyContent: 'space-between',
       }}
     >
-      <Box
-        component="header"
-        sx={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: 2,
-        }}
-      >
-        Header
-      </Box>
+      <Header />
       <Box
         sx={{
-          backgroundColor: 'primary.main',
+          backgroundColor: 'background.default',
           flex: 1,
         }}
       >

@@ -1,5 +1,4 @@
 import { Global, css } from '@emotion/react';
-import { palette } from '../../styles/styles';
 
 const GlobalStyles = () => (
   <Global
@@ -10,7 +9,6 @@ const GlobalStyles = () => (
         minHeight: '100vh',
         minWidth: '320px',
         flexDirection: 'column',
-        backgroundColor: palette.background?.default,
       },
       '#root': {
         display: 'flex',
