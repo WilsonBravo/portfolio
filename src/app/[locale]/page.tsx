@@ -19,7 +19,6 @@ export default function Home() {
       <Header />
       <Box
         sx={{
-          backgroundColor: 'background.default',
           flex: 1,
         }}
       >

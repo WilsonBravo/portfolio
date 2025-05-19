@@ -9,7 +9,9 @@ export {
   useColorScheme,
   Typography,
   useTheme,
+  Skeleton,
 } from './material-ui/material-ui';
 export { Icon, faBars } from './icon/icon';
 export { Header } from './header/header';
 export { MaterialUISwitch } from './mui-switch/mui-switch';
+export { GeneralSkeleton } from './skeletons/skeletons';

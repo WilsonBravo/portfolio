@@ -8,4 +8,5 @@ export {
   useColorScheme,
   Typography,
   useTheme,
+  Skeleton,
 } from '@mui/material';
