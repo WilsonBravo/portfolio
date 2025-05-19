@@ -7,4 +7,5 @@ export {
   Switch,
   useColorScheme,
   Typography,
+  useTheme,
 } from '@mui/material';

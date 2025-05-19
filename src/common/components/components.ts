@@ -8,6 +8,7 @@ export {
   Switch,
   useColorScheme,
   Typography,
+  useTheme,
 } from './material-ui/material-ui';
 export { Icon, faBars } from './icon/icon';
 export { Header } from './header/header';

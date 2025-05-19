@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 import {
   Box,
@@ -11,28 +12,46 @@ import {
   Switch,
   useColorScheme,
   Typography,
+  useTheme,
 } from '../material-ui/material-ui';
-import { Icon, faBars } from '../icon/icon';
+
 import { images } from '@/common/constants/images';
+import { usePathname, redirect } from '@/i18n/navigation';
+
 import { MaterialUISwitch } from '../mui-switch/mui-switch';
+import { Icon, faBars } from '../icon/icon';
 
 const Header: React.FC = () => {
+  const pathname = usePathname();
+  const locale = useLocale();
+  const theme = useTheme();
+
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [checked, setChecked] = React.useState(true);
+  const [checkedTheme, setCheckedTheme] = React.useState(
+    theme.palette.mode == 'light'
+  );
+  const [checkedI18n, setCheckedI18n] = React.useState(locale == 'es');
+
   const { mode, setMode } = useColorScheme();
   if (!mode) {
     return null;
   }
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.checked);
+  const open = Boolean(anchorEl);
+
+  const handleChangeTheme = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedTheme(event.target.checked);
     setMode(event.target.checked ? 'dark' : 'light');
   };
+  const handleChangeI18n = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedI18n(event.target.checked);
+    redirect({ href: pathname, locale: checkedI18n ? 'en' : 'es' });
+  };
 
-  const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -88,6 +107,8 @@ const Header: React.FC = () => {
             }}
           >
             <Switch
+              checked={checkedI18n}
+              onChange={handleChangeI18n}
               checkedIcon={
                 <Box
                   sx={{
@@ -117,7 +138,10 @@ const Header: React.FC = () => {
             />
           </MenuItem>
           <MenuItem>
-            <MaterialUISwitch checked={checked} onChange={handleChange} />
+            <MaterialUISwitch
+              checked={checkedTheme}
+              onChange={handleChangeTheme}
+            />
           </MenuItem>
         </Menu>
       </Box>
