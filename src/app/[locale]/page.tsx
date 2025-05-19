@@ -1,7 +1,12 @@
 'use client';
+import { useTranslations } from 'next-intl';
+
+import { Link } from '@/i18n/navigation';
 import { Box, Header } from '@/common/components/components';
 
 export default function Home() {
+  const t = useTranslations('HomePage');
+
   return (
     <Box
       sx={{
@@ -18,7 +23,10 @@ export default function Home() {
           flex: 1,
         }}
       >
-        Hola Mundo!
+        {t('title')}
+        <Link href="/" locale="en">
+          {t('about')}
+        </Link>
       </Box>
       <Box
         component="footer"
