@@ -13,5 +13,7 @@ export {
 } from './material-ui/material-ui';
 export { Icon, faBars } from './icon/icon';
 export { Header } from './header/header';
+export { Footer } from './footer/footer';
 export { MaterialUISwitch } from './mui-switch/mui-switch';
 export { GeneralSkeleton } from './skeletons/skeletons';
+export { Image } from './next/next';

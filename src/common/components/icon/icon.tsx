@@ -1,2 +1,3 @@
 export { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-export { faBars } from '@fortawesome/free-solid-svg-icons';
+export { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+export { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import { Image } from '../next/next';
 import { useLocale } from 'next-intl';
 
 import {
@@ -59,6 +59,7 @@ const Header: React.FC = () => {
   return (
     <Box
       sx={{
+        backgroundColor: 'background.default',
         width: '100%',
         display: 'flex',
         justifyContent: 'space-between',

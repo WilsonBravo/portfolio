@@ -1,8 +1,14 @@
 'use client';
 import { useTranslations } from 'next-intl';
 
-import { Link } from '@/i18n/navigation';
-import { Box, Header } from '@/common/components/components';
+import {
+  Box,
+  Footer,
+  Header,
+  Image,
+  Typography,
+} from '@/common/components/components';
+import { images } from '@/common/constants/images';
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -14,31 +20,36 @@ export default function Home() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
+        position: 'relative',
       }}
     >
+      <Box
+        sx={{
+          flex: 1,
+          position: 'absolute',
+          background: 'url("/neuronal_network_animation.gif")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+          height: '100%',
+          opacity: 0.2,
+          zIndex: -1,
+        }}
+      />
       <Header />
       <Box
         sx={{
           flex: 1,
-        }}
-      >
-        {t('title')}
-        <Link href="/" locale="en">
-          {t('about')}
-        </Link>
-      </Box>
-      <Box
-        component="footer"
-        sx={{
-          width: '100%',
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
-          padding: 2,
+          justifyContent: 'center',
         }}
       >
-        Footer
+        <Image src={images.logo} alt="logo" width={200} height={200} />
+        <Typography variant="h1">{t('title')}</Typography>
       </Box>
+      <Footer />
     </Box>
   );
 }
