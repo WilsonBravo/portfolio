@@ -1,6 +1,16 @@
 {
+  "Metadata": {
+    "title": "Wilson Bravo - Fullstack Web Developer | Portfolio & Projects",
+    "description": "Professional portfolio of Wilson Bravo, a fullstack web developer. Explore my experience, featured projects, a working backend demo, and a brief biography. Delivering modern, customized web solutions."
+  },
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "about": "Go to the about page",
+    "projects": {
+      "portfolio": {
+        "title": "Portfolio with NextJS",
+        "description": "A personal portfolio website built using Next.js to showcase projects and skills."
+      }
+    }
   }
 }

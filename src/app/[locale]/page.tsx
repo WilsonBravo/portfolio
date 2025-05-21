@@ -48,6 +48,10 @@ export default function Home() {
       >
         <Image src={images.logo} alt="logo" width={200} height={200} />
         <Typography variant="h1">{t('title')}</Typography>
+        <Box>
+          <Typography>{t('projects.portfolio.title')}</Typography>
+          <Typography>{t('projects.portfolio.description')}</Typography>
+        </Box>
       </Box>
       <Footer />
     </Box>
