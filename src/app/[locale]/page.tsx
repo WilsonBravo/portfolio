@@ -5,10 +5,10 @@ import {
   Box,
   Footer,
   Header,
-  Image,
   Typography,
 } from '@/common/components/components';
-import { images } from '@/common/constants/images';
+
+import { InverseParallax } from './components/inverse-parallax';
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -37,6 +37,7 @@ export default function Home() {
         }}
       />
       <Header />
+      <InverseParallax />
       <Box
         sx={{
           flex: 1,
@@ -46,8 +47,6 @@ export default function Home() {
           justifyContent: 'center',
         }}
       >
-        <Image src={images.logo} alt="logo" width={200} height={200} />
-        <Typography variant="h1">{t('title')}</Typography>
         <Box>
           <Typography>{t('projects.portfolio.title')}</Typography>
           <Typography>{t('projects.portfolio.description')}</Typography>

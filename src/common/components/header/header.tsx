@@ -28,7 +28,7 @@ const Header: React.FC = () => {
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [checkedTheme, setCheckedTheme] = React.useState(
-    theme.palette.mode == 'light'
+    theme.palette.mode == 'dark'
   );
   const [checkedI18n, setCheckedI18n] = React.useState(locale == 'es');
 
