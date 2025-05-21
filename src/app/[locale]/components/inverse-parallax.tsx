@@ -26,11 +26,11 @@ const InverseParallax: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [mouseX, mouseY]);
 
-  const layer1X = useTransform(mouseX, (x) => x * 0.06);
-  const layer1Y = useTransform(mouseY, (y) => y * 0.06);
+  const layer1X = useTransform(mouseX, (x) => x * 0.03);
+  const layer1Y = useTransform(mouseY, (y) => y * 0.03);
 
-  const layer2X = useTransform(mouseX, (x) => x * -0.05);
-  const layer2Y = useTransform(mouseY, (y) => y * -0.05);
+  const layer2X = useTransform(mouseX, (x) => x * -0.02);
+  const layer2Y = useTransform(mouseY, (y) => y * -0.02);
 
   return (
     <Box
@@ -69,6 +69,7 @@ const InverseParallax: React.FC = () => {
           zIndex: 1,
         }}
       >
+        {/* 2nd layer */}
         <Box
           sx={{
             flex: 1,
@@ -77,19 +78,21 @@ const InverseParallax: React.FC = () => {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100%',
-            opacity: 0.7
           }}
         >
-          <Image src={images.logo} alt="logo" width={200} height={200} />
-          <Typography
-            variant="h2"
+          <Box
             sx={{
-              fontFamily: 'var(--font-press-start-2p)',
-              textShadow: '#000 1px 0 10px',
+              position: 'absolute',
             }}
           >
-            {t('title')}
-          </Typography>
+            <Image
+              src={images.home.parallax.layer2}
+              alt="logo"
+              width={1500}
+              height={550}
+            />
+          </Box>
+          <Image src={images.logo} alt="logo" width={200} height={200} />
         </Box>
       </motion.div>
       <motion.div
@@ -102,6 +105,7 @@ const InverseParallax: React.FC = () => {
           zIndex: 2,
         }}
       >
+        {/* 1st layer */}
         <Box
           sx={{
             flex: 1,
@@ -112,7 +116,18 @@ const InverseParallax: React.FC = () => {
             height: '100%',
           }}
         >
-          <Image src={images.logo} alt="logo" width={200} height={200} />
+          <Box
+            sx={{
+              position: 'absolute',
+            }}
+          >
+            <Image
+              src={images.home.parallax.layer1}
+              alt="logo"
+              width={1500}
+              height={550}
+            />
+          </Box>
           <Typography
             variant="h2"
             sx={{
@@ -120,7 +135,7 @@ const InverseParallax: React.FC = () => {
               textShadow: '#000 1px 0 10px',
             }}
           >
-            {t('title')}
+            {`${t('title').split(' ')[0]}\u00A0\u00A0\u00A0${t('title').split(' ')[1]}`}
           </Typography>
         </Box>
       </motion.div>

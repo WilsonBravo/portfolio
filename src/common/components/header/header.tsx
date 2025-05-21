@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Image } from '../next/next';
 import { useLocale } from 'next-intl';
 
@@ -31,6 +31,10 @@ const Header: React.FC = () => {
     theme.palette.mode == 'dark'
   );
   const [checkedI18n, setCheckedI18n] = React.useState(locale == 'es');
+
+  useEffect(() => {
+    setCheckedTheme(theme.palette.mode == 'dark');
+  }, [theme.palette.mode]);
 
   const { mode, setMode } = useColorScheme();
   if (!mode) {
