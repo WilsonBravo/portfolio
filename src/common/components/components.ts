@@ -17,3 +17,4 @@ export { Footer } from './footer/footer';
 export { MaterialUISwitch } from './mui-switch/mui-switch';
 export { GeneralSkeleton } from './skeletons/skeletons';
 export { Image } from './next/next';
+export { LongText } from './long-text/long-text';

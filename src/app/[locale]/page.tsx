@@ -5,10 +5,13 @@ import {
   Box,
   Footer,
   Header,
+  Image,
+  LongText,
   Typography,
 } from '@/common/components/components';
 
 import { InverseParallax } from './components/inverse-parallax';
+import { images } from '@/common/constants/images';
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -43,13 +46,46 @@ export default function Home() {
           flex: 1,
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
+          padding: '40px 40px',
         }}
       >
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: "40px"
+          }}
+        >
+          <Box
+            sx={{
+              '& img': {
+                objectFit: 'cover',
+                borderTopLeftRadius: '20px',
+                borderTopRightRadius: '80px',
+                borderBottomLeftRadius: '80px',
+                borderBottomRightRadius: '20px',
+              },
+            }}
+          >
+            <Image
+              src={images.photos.landscape}
+              width={300}
+              height={300}
+              alt="photo_1"
+            />
+          </Box>
+          <Box sx={{
+            width: '300px'
+          }}>
+            <Typography variant='h4' color='primary' fontWeight={800}>{t('hello')}</Typography>
+            <Typography variant="h6" fontWeight={200}>
+              {t('self-description')}
+            </Typography>
+          </Box>
+        </Box>
         <Box>
-          <Typography>{t('projects.portfolio.title')}</Typography>
-          <Typography>{t('projects.portfolio.description')}</Typography>
+          <Typography variant='h3' fontWeight={800} color='primary'>{t('about.title')}</Typography>
+          <LongText text={t('about.description')} maxChars={500}/>
         </Box>
       </Box>
       <Footer />

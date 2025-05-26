@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { MainWrapper } from '@/common/components/components';
 
-import "@fontsource/winky-rough/400.css";
+import "@fontsource/winky-rough/300.css";
 
 const indieFlower = Indie_Flower({
   variable: '--font-indie-flower',

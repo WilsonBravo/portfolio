@@ -5,12 +5,23 @@
   },
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page",
+    "about": {
+      "title": "About Me",
+      "description": "I was born in Pasto, Nariño, and my academic and professional journey has been marked by a strong background in electronic engineering. Initially, I acquired knowledge in electrical installations and basic electronics during my education at a technical school. Later on, I decided to broaden my academic horizons and graduated in Electronic Engineering from the Pontifical Javeriana University.\n\nDuring my time at university, I delved into the fundamentals of engineering, applied physics, and microcontroller programming. Additionally, I specialized in areas such as artificial intelligence, Internet of Things (IoT), and image processing and vision, solidifying my interest in technological development.\n\nMy dedication was recognized with an honorable mention for my thesis. I applied my knowledge in a practical setting. My professional internships at WOM (Partners Telecom Colombia) were an invaluable opportunity to put my skills into practice. In diverse projects, from developing a process manager with Tkinter to implementing web applications with Django and creating APIs for automatic queries to Oracle databases, I showcased my proficiency in Python programming.\n\nThroughout this experience, I also gained expertise in handling data from key tools such as Zabbix, Grafana, and AppDynamics, translating into effective solutions. My IBM Data Fundamentals certification and participation in the ONE (Oracle Next Education) program reflect my ongoing commitment to learning. Currently, I am focused on expanding my knowledge in Backend with Java, taking advantage of the opportunities that the ONE program provides to strengthen my skills in web programming.\n\nMy academic and professional journey has been a constant pursuit of excellence and growth, and I am excited to continue expanding my knowledge and contributing to the field of technology."
+    },
+    "hello": "Hello I am Wilson!",
+    "self-description": "I am an Electronics Engineer and Full Stack Developer with experience in data management and problem-solving in software implementation. I am passionate about improving my skills and adding value to every project.",
     "projects": {
       "portfolio": {
         "title": "Portfolio with NextJS",
         "description": "A personal portfolio website built using Next.js to showcase projects and skills."
       }
+    }
+  },
+  "utils": {
+    "paragraph": {
+      "more": "show more",
+      "less": "show less"
     }
   }
 }

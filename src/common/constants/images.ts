@@ -1,6 +1,9 @@
 export const images = {
   logo: '/miku_green.png',
   lemon: '/lemon.png',
+  photos: {
+    landscape: '/photos/landscape.jpeg',
+  },
   home: {
     drawing: '/home/dibujo.png',
     parallax: {

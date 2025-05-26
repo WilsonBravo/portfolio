@@ -5,12 +5,23 @@
   },
   "HomePage": {
     "title": "¡Hola mundo!",
-    "about": "Ir a la página sobre mí",
+    "about": {
+      "title": "Sobre Mi",
+      "description": "Nací en Pasto, Nariño, y mi trayectoria académica y profesional ha estado marcada por una sólida formación en ingeniería electrónica. Inicialmente, adquirí conocimientos en instalaciones eléctricas y electrónica básica durante mi formación en una escuela técnica. Más adelante, decidí ampliar mis horizontes académicos y me gradué en Ingeniería Electrónica de la Pontificia Universidad Javeriana.\n\nDurante mi tiempo en la universidad, profundicé en los fundamentos de la ingeniería, la física aplicada y la programación de microcontroladores. Además, me especialicé en áreas como inteligencia artificial, Internet de las Cosas (IoT), y procesamiento e interpretación de imágenes, consolidando mi interés en el desarrollo tecnológico.\n\nMi dedicación fue reconocida con una mención de honor por mi tesis. Apliqué mis conocimientos en un entorno práctico. Mis prácticas profesionales en WOM (Partners Telecom Colombia) fueron una oportunidad invaluable para poner en práctica mis habilidades. En diversos proyectos, desde el desarrollo de un gestor de procesos con Tkinter hasta la implementación de aplicaciones web con Django y la creación de APIs para consultas automáticas a bases de datos Oracle, demostré mi dominio en programación con Python.\n\nA lo largo de esta experiencia, también adquirí conocimientos en el manejo de datos con herramientas clave como Zabbix, Grafana y AppDynamics, lo que se tradujo en soluciones efectivas. Mi certificación en Fundamentos de Datos de IBM y mi participación en el programa ONE (Oracle Next Education) reflejan mi compromiso continuo con el aprendizaje. Actualmente, estoy enfocado en ampliar mis conocimientos en Backend con Java, aprovechando las oportunidades que brinda el programa ONE para fortalecer mis habilidades en programación web.\n\nMi camino académico y profesional ha sido una constante búsqueda de la excelencia y el crecimiento, y estoy emocionado por seguir ampliando mis conocimientos y contribuir al campo de la tecnología."
+    },
+    "hello": "¡Hola soy Wilson!",
+    "self-description": "Soy Ingeniero Electrónico y Desarrollador Full Stack con experiencia en la gestión de datos y solución de problemas en la implementación de software. Me apasiona mejorar mis habilidades y aportar valor en cada proyecto.",
     "projects": {
       "portfolio": {
         "title": "Portafolio con NextJS",
         "description": "Un sitio web de portafolio personal construido con Next.js para mostrar proyectos y habilidades."
       }
+    }
+  },
+  "utils": {
+    "paragraph": {
+      "more": "ver más",
+      "less": "ver menos"
     }
   }
 }
