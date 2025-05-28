@@ -21,6 +21,8 @@ export {
   faGithub,
   faLinkedin,
   faFile,
+  faArrowAltCircleLeft,
+  faArrowAltCircleRight,
 } from './icon/icon';
 export { Header } from './header/header';
 export { Footer } from './footer/footer';
@@ -33,6 +35,7 @@ export {
   ExpandableCard,
   InverseParallax,
   DropableCard,
+  Carousel,
 } from './animations/animations';
 export { InfoBanner } from './info-banner/info-banner';
 export { InfoCard } from './info-card/info-card';

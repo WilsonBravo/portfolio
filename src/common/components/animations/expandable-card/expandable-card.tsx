@@ -47,26 +47,31 @@ const ExpandableCard: React.FC<Properties> = ({
             left: 0,
             width: '100vw',
             height: '100vh',
-            background: '#fff',
             zIndex: 999,
             overflowY: 'auto',
             padding: '2rem',
             boxSizing: 'border-box',
+            overflow: 'hidden',
           }}
         >
-          <motion.div layout>
-            <Box
-              sx={{
+          {/* <motion.div layout> */}
+          <Box
+            sx={{
+              width: '100%',
+              height: '100%',
+              backgroundColor: 'background.default',
+              boxShadow: '1px 1px 11px 0px rgba(0,0,0,0.75)',
+              borderRadius: '20px',
+              overflow: 'hidden',
+              '& img': {
                 width: '100%',
-                '& img': {
-                  width: '100%',
-                  objectFit: 'cover',
-                },
-              }}
-            >
-              <Image alt="banner" src={imgSrc} width={1500} height={300} />
-            </Box>
-          </motion.div>
+                objectFit: 'cover',
+              },
+            }}
+          >
+            <Image alt="banner" src={imgSrc} width={1500} height={300} />
+          </Box>
+          {/* </motion.div> */}
           <motion.div layout style={{ marginTop: '2rem' }}>
             {content}
           </motion.div>
