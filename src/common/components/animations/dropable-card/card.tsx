@@ -13,6 +13,7 @@ type Properties = {
   width: number;
   height: number;
   imgUrl: string;
+  maxIndexLength: number;
   setIndex?: (index: number) => void;
   index?: number;
   drag?: boolean | 'x' | 'y' | undefined;
@@ -23,9 +24,10 @@ const Card: React.FC<Properties> = ({
   width,
   height,
   imgUrl,
+  maxIndexLength,
   drag,
   setIndex = () => {},
-  index = 0,
+  index = -1,
 }) => {
   const [exitX, setExitX] = useState(0);
 
@@ -46,18 +48,21 @@ const Card: React.FC<Properties> = ({
   };
   const variantsBackCard: Variants = {
     initial: { scale: 0, y: 105, opacity: 0 },
-    animate: { scale: 0.75, y: 30, opacity: 0.5 },
+    animate: { scale: 0.75, y: 50, opacity: 0.5 },
   };
 
   function handleDragEnd(_: Event, info: PanInfo) {
     if (info.offset.x < -100) {
       setExitX(-250);
-      setIndex(index + 1);
+      const newIndex = index === maxIndexLength ? 0 : index + 1;
+      setIndex(newIndex);
     }
     if (info.offset.x > 100) {
       setExitX(250);
-      setIndex(index + 1);
+      const newIndex = index === maxIndexLength ? 0 : index + 1;
+      setIndex(newIndex);
     }
+    console.log(frontCard, imgUrl);
   }
 
   return (

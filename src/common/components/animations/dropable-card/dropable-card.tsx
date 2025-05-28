@@ -16,36 +16,35 @@ const DropableCard: React.FC<Properties> = ({
   width = 150,
   height = 150,
 }) => {
-  const [index, setIndex] = useState(0);
   const [imgIndex, setImgIndex] = useState(0);
 
   useEffect(() => {
-    setImgIndex((prev) => {
-      if (prev === imgList.length - 1) {
-        return 0;
-      }
-      return prev + 1;
-    });
-  }, [index]);
+    setImgIndex(1);
+  }, []);
+  useEffect(() => {
+    setTimeout(() => setImgIndex(2), 1000);
+  }, []);
 
   return (
     <motion.div style={{ width, height, position: 'relative' }}>
       <AnimatePresence initial={false}>
         <Card
-          key={index + 1}
+          key={imgList[imgIndex == imgList.length - 1 ? 0 : imgIndex + 1]}
           frontCard={false}
           width={width}
           height={height}
           imgUrl={imgList[imgIndex == imgList.length - 1 ? 0 : imgIndex + 1]}
+          maxIndexLength={imgList.length - 1}
         />
         <Card
-          key={index}
+          key={imgList[imgIndex]}
           frontCard={true}
           width={width}
           height={height}
           imgUrl={imgList[imgIndex]}
-          index={index}
-          setIndex={setIndex}
+          maxIndexLength={imgList.length - 1}
+          index={imgIndex}
+          setIndex={setImgIndex}
           drag="x"
         />
       </AnimatePresence>
