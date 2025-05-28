@@ -10,4 +10,5 @@ export {
   Typography,
   useTheme,
   Skeleton,
+  Snackbar,
 } from '@mui/material';

@@ -10,12 +10,13 @@ export {
   Typography,
   useTheme,
   Skeleton,
+  Snackbar,
 } from './material-ui/material-ui';
-export { Icon, faBars } from './icon/icon';
+export { Icon, faBars, faEnvelope, faGithub, faLinkedin } from './icon/icon';
 export { Header } from './header/header';
 export { Footer } from './footer/footer';
 export { MaterialUISwitch } from './mui-switch/mui-switch';
 export { GeneralSkeleton } from './skeletons/skeletons';
 export { Image } from './next/next';
 export { LongText } from './long-text/long-text';
-export { FlipCard } from './animations/animations';
+export { FlipCard, ExpandableCard } from './animations/animations';

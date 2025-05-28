@@ -81,15 +81,24 @@ const Header: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          cursor: 'pointer',
         }}
       >
-        <Image alt="logo" width={50} height={50} src={images.logo} />
-        <Image alt="lemon" width={50} height={50} src={images.lemon} />
+        <IconButton sx={{':hover': {
+              rotate: '-45deg',
+            },}}>
+          <Image alt="logo" width={40} height={40} src={images.logo} />
+        </IconButton>
+        <IconButton sx={{':hover': {
+              rotate: '45deg',
+            },}}>
+          <Image alt="lemon" width={40} height={40} src={images.lemon} />
+        </IconButton>
       </Box>
       <Box>
         <IconButton
-          sx={{ padding: 2 }}
+          sx={{
+            padding: 2,
+          }}
           id="user-menu-button"
           aria-controls={open ? 'basic-menu' : undefined}
           aria-haspopup="true"

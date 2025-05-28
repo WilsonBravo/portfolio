@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { Press_Start_2P, Indie_Flower } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
@@ -7,7 +8,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { MainWrapper } from '@/common/components/components';
 
-import "@fontsource/winky-rough/300.css";
+import '@fontsource/winky-rough/300.css';
 
 const indieFlower = Indie_Flower({
   variable: '--font-indie-flower',
@@ -58,7 +59,9 @@ export default async function RootLayout({
       <link rel="icon" href="/miku_green.png" type="image/png" />
       <MainWrapper>
         <body className={`${pressStart2P.variable} ${indieFlower.variable}`}>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <Suspense fallback={null}>
+            <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          </Suspense>
         </body>
       </MainWrapper>
     </html>

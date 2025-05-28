@@ -5,14 +5,21 @@ import {
   Box,
   Footer,
   Header,
+  Icon,
+  IconButton,
   Image,
-  LongText,
+  // LongText,
   Typography,
+  faGithub,
+  faLinkedin,
+  faEnvelope,
+  ExpandableCard,
 } from '@/common/components/components';
 
-import { InverseParallax } from './components/inverse-parallax';
+// import { InverseParallax } from './components/inverse-parallax';
 import { images } from '@/common/constants/images';
-import { ProjectCard } from './components/project-card';
+// import { ProjectCard } from './components/project-card';
+import { InfoCard } from './components/info-card';
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -27,7 +34,7 @@ export default function Home() {
         position: 'relative',
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           flex: 1,
           position: 'absolute',
@@ -39,9 +46,9 @@ export default function Home() {
           opacity: 0.2,
           zIndex: -1,
         }}
-      />
+      /> */}
       <Header />
-      <InverseParallax />
+      {/* <InverseParallax /> */}
       <Box
         sx={{
           flex: 1,
@@ -70,33 +77,101 @@ export default function Home() {
           >
             <Image
               src={images.photos.landscape}
-              width={300}
-              height={300}
+              width={220}
+              height={220}
               alt="photo_1"
             />
           </Box>
           <Box
             sx={{
+              display: 'flex',
+              flexDirection: 'column',
               width: '300px',
+              gap: '10px',
             }}
           >
             <Typography variant="h4" color="primary" fontWeight={800}>
               {t('hello')}
             </Typography>
-            <Typography variant="h6" fontWeight={200}>
-              {t('self-description')}
-            </Typography>
+            <Typography fontWeight={200}>{t('self-description')}</Typography>
+            <Box>
+              <IconButton>
+                <Icon icon={faGithub} />
+              </IconButton>
+              <IconButton>
+                <Icon icon={faLinkedin} />
+              </IconButton>
+              <IconButton>
+                <Icon icon={faEnvelope} />
+              </IconButton>
+            </Box>
           </Box>
         </Box>
-        <Box>
-          <Typography variant="h3" fontWeight={800} color="primary">
+        <Box sx={{ position: 'relative', mt: '80px' }}>
+          <Box
+            sx={{
+              position: 'absolute',
+              zIndex: -1,
+              top: 20,
+              width: '100%',
+              '& img': {
+                width: '100%',
+                height: 'auto',
+              },
+            }}
+          >
+            <Image
+              alt="line_path"
+              width={450}
+              height={75}
+              src={images.home.line_path}
+            />
+          </Box>
+          <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+            <ExpandableCard
+              initialContent={
+                <InfoCard
+                  imgSrc={images.logo}
+                  title="lorem ipsum"
+                  description="lorem ipsum"
+                />
+              }
+              content={<Box>Hola Mundo</Box>}
+              imgSrc={images.logo}
+            />
+
+            <ExpandableCard
+              initialContent={
+                <InfoCard
+                  imgSrc={images.logo_grey}
+                  title="lorem ipsum"
+                  description="lorem ipsum"
+                />
+              }
+              content={<Box>Hola Mundo</Box>}
+              imgSrc={images.logo_grey}
+            />
+
+            <ExpandableCard
+              initialContent={
+                <InfoCard
+                  imgSrc={images.logo_red}
+                  title="lorem ipsum"
+                  description="lorem ipsum"
+                />
+              }
+              content={<Box>Hola Mundo</Box>}
+              imgSrc={images.logo_red}
+            />
+          </Box>
+          {/* <Typography variant="h3" fontWeight={800} color="primary">
             {t('about.title')}
           </Typography>
-          <LongText text={t('about.description')} maxChars={500} />
+          <LongText text={t('about.description')} maxChars={500} /> */}
         </Box>
-        <Box>
+        {/* <Box>
           <ProjectCard />
-        </Box>
+        </Box> */}
       </Box>
       <Footer />
     </Box>
