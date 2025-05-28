@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Box, Image, Typography } from '@/common/components/components';
+import { Box, Typography } from '../material-ui/material-ui';
+import { Image } from '../next/next';
 
 type Properties = {
   imgUrl: string;

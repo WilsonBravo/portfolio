@@ -1,11 +1,8 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
-import {
-  Box,
-  Image,
-  Typography,
-  Button,
-} from '@/common/components/components';
+import { Box, Typography, Button } from '../material-ui/material-ui';
+import { Image } from '../next/next';
 
 type Properties = {
   title: string;
@@ -14,6 +11,8 @@ type Properties = {
 };
 
 const InfoCard: React.FC<Properties> = ({ title, description, imgSrc }) => {
+  const t = useTranslations('utils');
+
   return (
     <Box
       sx={{
@@ -32,7 +31,7 @@ const InfoCard: React.FC<Properties> = ({ title, description, imgSrc }) => {
         {title}
       </Typography>
       <Typography>{description}</Typography>
-      <Button>Ver Más</Button>
+      <Button>{t('paragraph.more')}</Button>
     </Box>
   );
 };

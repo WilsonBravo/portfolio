@@ -1,9 +1,12 @@
+'use client';
+
 import React, { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 
-import { Box, Image, Typography } from '@/common/components/components';
+import { Box, Typography } from '../../material-ui/material-ui';
+import { Image } from '../../next/next';
 import { images } from '@/common/constants/constants';
 
 const InverseParallax: React.FC = () => {

@@ -26,4 +26,10 @@ export { MaterialUISwitch } from './mui-switch/mui-switch';
 export { GeneralSkeleton } from './skeletons/skeletons';
 export { Image } from './next/next';
 export { LongText } from './long-text/long-text';
-export { FlipCard, ExpandableCard } from './animations/animations';
+export {
+  FlipCard,
+  ExpandableCard,
+  InverseParallax,
+} from './animations/animations';
+export { InfoBanner } from './info-banner/info-banner';
+export { InfoCard } from './info-card/info-card';
