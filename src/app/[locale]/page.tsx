@@ -4,13 +4,13 @@ import {
   Box,
   Footer,
   Header,
-  Typography,
   InfoBanner,
 } from '@/common/components/components';
 
 import { Description } from './components/description';
 import { About } from './components/about';
 import { Projects } from './components/projects';
+import { Skills } from './components/skills';
 
 export default function Home() {
   return (
@@ -48,36 +48,7 @@ export default function Home() {
           imgUrl="/bg/anime.jpg"
         />
 
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            height: '200px',
-          }}
-        >
-          <Typography variant="h1">Software Ability</Typography>
-          <Box
-            sx={{
-              display: 'flex',
-              gap: '20px',
-              flexDirection: 'column',
-              padding: '40px',
-              flexWrap: 'wrap',
-              height: '100%',
-              width: '100%',
-            }}
-          >
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-            <Typography>VS Code</Typography>
-          </Box>
-        </Box>
-
+        <Skills />
         <Projects />
       </Box>
       <Footer />
