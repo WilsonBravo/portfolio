@@ -30,6 +30,7 @@ export {
   FlipCard,
   ExpandableCard,
   InverseParallax,
+  DropableCard,
 } from './animations/animations';
 export { InfoBanner } from './info-banner/info-banner';
 export { InfoCard } from './info-card/info-card';
