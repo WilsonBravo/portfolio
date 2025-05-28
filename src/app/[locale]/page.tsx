@@ -8,11 +8,11 @@ import {
   Icon,
   IconButton,
   Image,
-  // LongText,
   Typography,
   faGithub,
   faLinkedin,
   faEnvelope,
+  faFile,
   ExpandableCard,
 } from '@/common/components/components';
 
@@ -20,6 +20,7 @@ import {
 import { images } from '@/common/constants/images';
 // import { ProjectCard } from './components/project-card';
 import { InfoCard } from './components/info-card';
+import { InfoBanner } from './components/info-banner';
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -38,7 +39,7 @@ export default function Home() {
         sx={{
           flex: 1,
           position: 'absolute',
-          background: 'url("/neuronal_network_animation.gif")',
+          background: 'url("/landing-background.jpg")',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           width: '100%',
@@ -55,6 +56,7 @@ export default function Home() {
           display: 'flex',
           flexDirection: 'column',
           padding: '40px 80px',
+          gap: '80px',
         }}
       >
         <Box
@@ -104,10 +106,13 @@ export default function Home() {
               <IconButton>
                 <Icon icon={faEnvelope} />
               </IconButton>
+              <IconButton>
+                <Icon icon={faFile} />
+              </IconButton>
             </Box>
           </Box>
         </Box>
-        <Box sx={{ position: 'relative', mt: '80px' }}>
+        <Box sx={{ position: 'relative' }}>
           <Box
             sx={{
               position: 'absolute',
@@ -172,6 +177,51 @@ export default function Home() {
         {/* <Box>
           <ProjectCard />
         </Box> */}
+        <InfoBanner
+          title="Personal Skills"
+          listItems={['Communication', 'Creativity', 'Teamwork', 'Flexibility']}
+          imgUrl="/bg/greek_statue.jpg"
+        />
+
+        <InfoBanner
+          title="Interest"
+          listItems={['Drawing'].concat(Array(4).fill('Drawing'))}
+          imgUrl="/bg/anime.jpg"
+        />
+
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            height: '200px',
+          }}
+        >
+          <Typography variant="h1">Software Ability</Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              gap: '20px',
+              flexDirection: 'column',
+              padding: '40px',
+              flexWrap: 'wrap',
+              height: '100%',
+              width: '100%',
+            }}
+          >
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+            <Typography>VS Code</Typography>
+          </Box>
+        </Box>
+
+        <Box>
+          <Typography variant="h1">Projects</Typography>
+        </Box>
       </Box>
       <Footer />
     </Box>

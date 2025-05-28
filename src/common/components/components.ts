@@ -12,7 +12,14 @@ export {
   Skeleton,
   Snackbar,
 } from './material-ui/material-ui';
-export { Icon, faBars, faEnvelope, faGithub, faLinkedin } from './icon/icon';
+export {
+  Icon,
+  faBars,
+  faEnvelope,
+  faGithub,
+  faLinkedin,
+  faFile,
+} from './icon/icon';
 export { Header } from './header/header';
 export { Footer } from './footer/footer';
 export { MaterialUISwitch } from './mui-switch/mui-switch';
