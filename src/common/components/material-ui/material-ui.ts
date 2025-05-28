@@ -2,6 +2,7 @@ export {
   Box,
   Button,
   IconButton,
+  ButtonBase,
   Menu,
   MenuItem,
   Switch,
