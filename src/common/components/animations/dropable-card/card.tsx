@@ -62,7 +62,6 @@ const Card: React.FC<Properties> = ({
       const newIndex = index === maxIndexLength ? 0 : index + 1;
       setIndex(newIndex);
     }
-    console.log(frontCard, imgUrl);
   }
 
   return (

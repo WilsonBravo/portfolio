@@ -11,4 +11,6 @@ export {
   useTheme,
   Skeleton,
   Snackbar,
+  Fade,
+  Tooltip,
 } from '@mui/material';

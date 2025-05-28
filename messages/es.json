@@ -12,9 +12,20 @@
     "hello": "¡Hola soy Wilson!",
     "self-description": "Soy Ingeniero Electrónico y Desarrollador Full Stack con experiencia en la gestión de datos y solución de problemas en la implementación de software. Me apasiona mejorar mis habilidades y aportar valor en cada proyecto.",
     "projects": {
+      "undergraduateThesis": {
+        "imgUrl": "/projects/thesis.png",
+        "title": "undergraduate project",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
+      },
       "portfolio": {
-        "title": "Portafolio con NextJS",
-        "description": "Un sitio web de portafolio personal construido con Next.js para mostrar proyectos y habilidades."
+        "imgUrl": "/projects/WebPortfolio.png",
+        "title": "portfolio",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
+      },
+      "lifeSwap": {
+        "imgUrl": "/projects/WebDjango.png",
+        "title": "Life Swap",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
       }
     }
   },

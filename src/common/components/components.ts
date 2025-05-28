@@ -11,6 +11,8 @@ export {
   useTheme,
   Skeleton,
   Snackbar,
+  Fade,
+  Tooltip,
 } from './material-ui/material-ui';
 export {
   Icon,
