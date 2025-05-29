@@ -13,6 +13,15 @@ export const images = {
       layer2: '/home/layer2.png',
     },
     line_path: '/home/line_path.png',
+    about: {
+      javeriana_facultad_ingenieria:
+        '/home/about/javeriana_facultad_ingenieria.jpg',
+      pasto: '/home/about/pasto.jpg',
+      programming: '/home/about/programming.jpg',
+      wom: '/home/about/wom.webp',
+      oracle: '/home/about/oracle.jpg',
+      google: '/home/about/google.jpg',
+    },
   },
   icons: {
     typescript: '/icons/typescript.png',
@@ -27,5 +36,8 @@ export const images = {
     grafana: '/icons/grafana.png',
     zabbix: '/icons/zabbix.png',
     appdynamics: '/icons/appdynamics.png',
+    arduino: '/icons/arduino.png',
+    raspberry: '/icons/raspberry.png',
+    linux: '/icons/linux.png',
   },
 };

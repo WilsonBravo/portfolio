@@ -7,7 +7,38 @@
     "title": "Hello world!",
     "about": {
       "title": "About Me",
-      "description": "I was born in Pasto, Nariño, and my academic and professional journey has been marked by a strong background in electronic engineering. Initially, I acquired knowledge in electrical installations and basic electronics during my education at a technical school. Later on, I decided to broaden my academic horizons and graduated in Electronic Engineering from the Pontifical Javeriana University.\n\nDuring my time at university, I delved into the fundamentals of engineering, applied physics, and microcontroller programming. Additionally, I specialized in areas such as artificial intelligence, Internet of Things (IoT), and image processing and vision, solidifying my interest in technological development.\n\nMy dedication was recognized with an honorable mention for my thesis. I applied my knowledge in a practical setting. My professional internships at WOM (Partners Telecom Colombia) were an invaluable opportunity to put my skills into practice. In diverse projects, from developing a process manager with Tkinter to implementing web applications with Django and creating APIs for automatic queries to Oracle databases, I showcased my proficiency in Python programming.\n\nThroughout this experience, I also gained expertise in handling data from key tools such as Zabbix, Grafana, and AppDynamics, translating into effective solutions. My IBM Data Fundamentals certification and participation in the ONE (Oracle Next Education) program reflect my ongoing commitment to learning. Currently, I am focused on expanding my knowledge in Backend with Java, taking advantage of the opportunities that the ONE program provides to strengthen my skills in web programming.\n\nMy academic and professional journey has been a constant pursuit of excellence and growth, and I am excited to continue expanding my knowledge and contributing to the field of technology."
+      "sections": {
+        "born-city": {
+          "title": "Born in Pasto",
+          "description": "SEPT 2000 - JUL 2018",
+          "paragraph": "I was born in Pasto, Nariño, and my academic and professional journey has been marked by a strong background in electronic engineering. Initially, I acquired knowledge in electrical installations and basic electronics during my education at a technical school."
+        },
+        "university": {
+          "title": "University",
+          "description": "JUL 2018 - MAR 2024",
+          "paragraph": "Later on, I decided to broaden my academic horizons and graduated in Electronic Engineering from the Pontifical Javeriana University.\n\nDuring my time at university, I delved into the fundamentals of engineering, applied physics, and microcontroller programming."
+        },
+        "programming": {
+          "title": "Programming",
+          "description": "JUL 2018 - MAR 2024",
+          "paragraph": "Additionally, I specialized in areas such as artificial intelligence, Internet of Things (IoT), and image processing and vision, solidifying my interest in technological development.\n\nMy dedication was recognized with an honorable mention for my thesis."
+        },
+        "wom": {
+          "title": "Internship",
+          "description": "AUG 2023 - JAN 2024",
+          "paragraph": "I applied my knowledge in a practical setting. My professional internships at WOM (Partners Telecom Colombia) were an invaluable opportunity to put my skills into practice. In diverse projects, from developing a process manager with Tkinter to implementing web applications with Django and creating APIs for automatic queries to Oracle databases, I showcased my proficiency in Python programming.\n\nThroughout this experience, I also gained expertise in handling data from key tools such as Zabbix, Grafana, and AppDynamics, translating into effective solutions."
+        },
+        "oracle": {
+          "title": "Web Development",
+          "description": "JAN 2024 - JUL 2024",
+          "paragraph": "As part of the Oracle Next Education (ONE) program, I deepened my knowledge in full-stack web development. I worked on building scalable web applications using technologies such as HTML, CSS, JavaScript, and modern frameworks like React and Node.js. The program emphasized agile methodologies, teamwork, and clean code practices, reinforcing both my technical and collaborative skills.\n\nI also developed several portfolio projects, showcasing my ability to translate user needs into functional and responsive web solutions."
+        },
+        "google": {
+          "title": "Cybersecurity",
+          "description": "JUL 2024 - MAY 2025",
+          "paragraph": "The Google Cybersecurity Professional Certificate program equipped me with practical skills in network security, risk management, and threat analysis. I gained hands-on experience with tools like Wireshark, Linux, and SIEM platforms, enabling me to detect vulnerabilities and respond to incidents effectively.\n\nThis training strengthened my understanding of security frameworks and best practices, preparing me to contribute to robust and secure digital environments."
+        }
+      }
     },
     "hello": "Hello I am Wilson!",
     "self-description": "I am an Electronics Engineer and Full Stack Developer with experience in data management and problem-solving in software implementation. I am passionate about improving my skills and adding value to every project.",

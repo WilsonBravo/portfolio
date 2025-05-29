@@ -24,8 +24,24 @@ const InfoCard: React.FC<Properties> = ({ title, description, imgSrc }) => {
         textAlign: 'center',
       }}
     >
-      <Box sx={{ backgroundColor: 'primary', borderRadius: '50%' }}>
-        <Image alt="card-image" src={imgSrc} width={150} height={150} />
+      <Box
+        sx={{
+          backgroundColor: 'primary',
+          borderRadius: '50%',
+          overflow: 'hidden',
+          width: 150,
+          height: 150,
+          ml: 'auto',
+          mr: 'auto',
+        }}
+      >
+        <Image
+          alt="card-image"
+          src={imgSrc}
+          width={150}
+          height={150}
+          style={{ objectFit: 'cover' }}
+        />
       </Box>
       <Typography variant="h5" color="primary">
         {title}

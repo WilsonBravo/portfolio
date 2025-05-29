@@ -7,7 +7,38 @@
     "title": "¡Hola mundo!",
     "about": {
       "title": "Sobre Mi",
-      "description": "Nací en Pasto, Nariño, y mi trayectoria académica y profesional ha estado marcada por una sólida formación en ingeniería electrónica. Inicialmente, adquirí conocimientos en instalaciones eléctricas y electrónica básica durante mi formación en una escuela técnica. Más adelante, decidí ampliar mis horizontes académicos y me gradué en Ingeniería Electrónica de la Pontificia Universidad Javeriana.\n\nDurante mi tiempo en la universidad, profundicé en los fundamentos de la ingeniería, la física aplicada y la programación de microcontroladores. Además, me especialicé en áreas como inteligencia artificial, Internet de las Cosas (IoT), y procesamiento e interpretación de imágenes, consolidando mi interés en el desarrollo tecnológico.\n\nMi dedicación fue reconocida con una mención de honor por mi tesis. Apliqué mis conocimientos en un entorno práctico. Mis prácticas profesionales en WOM (Partners Telecom Colombia) fueron una oportunidad invaluable para poner en práctica mis habilidades. En diversos proyectos, desde el desarrollo de un gestor de procesos con Tkinter hasta la implementación de aplicaciones web con Django y la creación de APIs para consultas automáticas a bases de datos Oracle, demostré mi dominio en programación con Python.\n\nA lo largo de esta experiencia, también adquirí conocimientos en el manejo de datos con herramientas clave como Zabbix, Grafana y AppDynamics, lo que se tradujo en soluciones efectivas. Mi certificación en Fundamentos de Datos de IBM y mi participación en el programa ONE (Oracle Next Education) reflejan mi compromiso continuo con el aprendizaje. Actualmente, estoy enfocado en ampliar mis conocimientos en Backend con Java, aprovechando las oportunidades que brinda el programa ONE para fortalecer mis habilidades en programación web.\n\nMi camino académico y profesional ha sido una constante búsqueda de la excelencia y el crecimiento, y estoy emocionado por seguir ampliando mis conocimientos y contribuir al campo de la tecnología."
+      "sections": {
+        "born-city": {
+          "title": "Nacido en Pasto",
+          "description": "SEPT 2000 - JUL 2018",
+          "paragraph": "Nací en Pasto, Nariño, y mi trayectoria académica y profesional ha estado marcada por una sólida formación en ingeniería electrónica. Inicialmente, adquirí conocimientos en instalaciones eléctricas y electrónica básica durante mi educación en una institución técnica."
+        },
+        "university": {
+          "title": "Universidad",
+          "description": "JUL 2018 - MAR 2024",
+          "paragraph": "Posteriormente, decidí ampliar mis horizontes académicos y me gradué como Ingeniero Electrónico de la Pontificia Universidad Javeriana.\n\nDurante mi tiempo en la universidad, profundicé en fundamentos de ingeniería, física aplicada y programación de microcontroladores."
+        },
+        "programming": {
+          "title": "Programación",
+          "description": "JUL 2018 - MAR 2024",
+          "paragraph": "Además, me especialicé en áreas como inteligencia artificial, Internet de las Cosas (IoT), y procesamiento y visión de imágenes, consolidando así mi interés por el desarrollo tecnológico.\n\nMi dedicación fue reconocida con una mención de honor por mi trabajo de grado."
+        },
+        "wom": {
+          "title": "Pasantía",
+          "description": "AGO 2023 - ENE 2024",
+          "paragraph": "Apliqué mis conocimientos en un entorno práctico. Mis pasantías profesionales en WOM (Partners Telecom Colombia) fueron una oportunidad invaluable para poner en práctica mis habilidades. En diversos proyectos, desde el desarrollo de un gestor de procesos con Tkinter hasta la implementación de aplicaciones web con Django y la creación de APIs para consultas automáticas a bases de datos Oracle, demostré mi dominio de la programación en Python.\n\nDurante esta experiencia, también adquirí conocimientos en el manejo de datos de herramientas clave como Zabbix, Grafana y AppDynamics, lo que se tradujo en soluciones efectivas."
+        },
+        "oracle": {
+          "title": "Desarrollo Web",
+          "description": "ENE 2024 - JUL 2024",
+          "paragraph": "Como parte del programa Oracle Next Education (ONE), profundicé mis conocimientos en desarrollo web full-stack. Trabajé en la creación de aplicaciones web escalables utilizando tecnologías como HTML, CSS, JavaScript y frameworks modernos como React y Node.js. El programa enfatizó metodologías ágiles, trabajo en equipo y buenas prácticas de código, fortaleciendo mis habilidades tanto técnicas como colaborativas.\n\nTambién desarrollé varios proyectos para mi portafolio, demostrando mi capacidad para traducir necesidades de los usuarios en soluciones web funcionales y responsivas."
+        },
+        "google": {
+          "title": "Ciberseguridad",
+          "description": "JUL 2024 - MAY 2025",
+          "paragraph": "El programa Google Cybersecurity Professional Certificate me brindó habilidades prácticas en seguridad de redes, gestión de riesgos y análisis de amenazas. Obtuve experiencia directa con herramientas como Wireshark, Linux y plataformas SIEM, lo que me permitió detectar vulnerabilidades y responder eficazmente a incidentes.\n\nEsta formación fortaleció mi comprensión de los marcos de seguridad y las mejores prácticas, preparándome para contribuir a entornos digitales seguros y robustos."
+        }
+      }
     },
     "hello": "¡Hola soy Wilson!",
     "self-description": "Soy Ingeniero Electrónico y Desarrollador Full Stack con experiencia en la gestión de datos y solución de problemas en la implementación de software. Me apasiona mejorar mis habilidades y aportar valor en cada proyecto.",

@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { images } from '@/common/constants/images';
+
 import { Snackbar, Box } from '../../material-ui/material-ui';
 import { Image } from '../../next/next';
 
@@ -57,24 +59,43 @@ const ExpandableCard: React.FC<Properties> = ({
           {/* <motion.div layout> */}
           <Box
             sx={{
+              position: 'relative',
               width: '100%',
               height: '100%',
               backgroundColor: 'background.default',
               boxShadow: '1px 1px 11px 0px rgba(0,0,0,0.75)',
               borderRadius: '20px',
               overflow: 'hidden',
-              '& img': {
+              '& img#banner': {
                 width: '100%',
+                height: '40%',
                 objectFit: 'cover',
+                objectPosition: 'center',
+              },
+              '& img#lemon-logo': {
+                position: 'absolute',
+                bottom: 0,
+                right: 0,
+                margin: '2rem',
               },
             }}
           >
-            <Image alt="banner" src={imgSrc} width={1500} height={300} />
-          </Box>
-          {/* </motion.div> */}
-          <motion.div layout style={{ marginTop: '2rem' }}>
+            <Image
+              id="banner"
+              alt="banner"
+              src={imgSrc}
+              width={1500}
+              height={300}
+            />
+            <Image
+              id="lemon-logo"
+              alt="lemon-icon"
+              src={images.lemon}
+              width={50}
+              height={50}
+            />
             {content}
-          </motion.div>
+          </Box>
         </motion.div>
       ) : (
         <motion.div
