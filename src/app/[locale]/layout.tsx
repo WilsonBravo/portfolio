@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 
 import { routing } from '@/i18n/routing';
 import { MainWrapper } from '@/common/components/components';
+import { images } from '@/common/constants/images';
 
 import '@fontsource/winky-rough/300.css';
 
@@ -37,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      images: '/miku_green.png',
+      images: images.logo,
     },
   };
 }
@@ -56,7 +57,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <link rel="icon" href="/miku_green.png" type="image/png" />
+      <link rel="icon" href={images.logo} type="image/png" />
       <MainWrapper>
         <body className={`${pressStart2P.variable} ${indieFlower.variable}`}>
           <Suspense fallback={null}>
