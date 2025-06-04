@@ -15,7 +15,8 @@ import {
 import { images } from '@/common/constants/constants';
 
 const Description: React.FC = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('');
+
   return (
     <Box
       sx={{
@@ -51,20 +52,22 @@ const Description: React.FC = () => {
         }}
       >
         <Typography variant="h4" color="primary" fontWeight={800}>
-          {t('hello')}
+          {t('HomePage.hello')}
         </Typography>
-        <Typography fontWeight={200}>{t('self-description')}</Typography>
+        <Typography fontWeight={200}>
+          {t('HomePage.self-description')}
+        </Typography>
         <Box>
-          <IconButton>
+          <IconButton href={t('utils.urls.github')} target="_blank">
             <Icon icon={faGithub} />
           </IconButton>
-          <IconButton>
+          <IconButton href={t('utils.urls.linkedin')} target="_blank">
             <Icon icon={faLinkedin} />
           </IconButton>
-          <IconButton>
+          <IconButton href={t('utils.urls.email')} target="_blank">
             <Icon icon={faEnvelope} />
           </IconButton>
-          <IconButton>
+          <IconButton href={t('utils.urls.cv')} target="_blank">
             <Icon icon={faFile} />
           </IconButton>
         </Box>

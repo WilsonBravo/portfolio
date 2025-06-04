@@ -104,10 +104,10 @@
       "close-window": "Click anywhere to close this window."
     },
     "urls": {
-      "github": "",
-      "linkedin": "",
-      "email": "",
-      "cv": ""
+      "github": "https://github.com/WilsonBravo",
+      "linkedin": "https://www.linkedin.com/in/wilson-bravo",
+      "email": "mailto:bravoc.wilson@gmail.com",
+      "cv": "/documents/CV_Wilson_Bravo_ENG.pdf"
     }
   }
 }
