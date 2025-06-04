@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         gap: '20px',
       }}
     >
-      <Box sx={{ display: 'flex', gap: '16px' }}>
+      <Box sx={{ display: 'flex', flex: 1, gap: '16px' }}>
         <IconButton size="large" href={t('github')} target="_blank">
           <Icon icon={faGithub} />
         </IconButton>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           <Icon icon={faEnvelope} />
         </IconButton>
       </Box>
-      <Typography variant="caption" color="textSecondary">
+      <Typography variant="caption" color="textSecondary" flex={1} textAlign='end'>
         ©2025 By Wilson Bravo <br />
         Created with Next JS
       </Typography>

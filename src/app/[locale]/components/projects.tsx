@@ -49,12 +49,15 @@ const Projects: React.FC = () => {
 
   return (
     <Box>
-      <Typography variant="h1">{t('title')}</Typography>
+      <Typography variant="h1" sx={{ fontSize: { xs: '3.5rem' } }}>
+        {t('title')}
+      </Typography>
       <Box
         sx={{
           mt: '20px',
           display: 'flex',
-          gap: '200px',
+          flexDirection: { xs: 'column', sm: 'row' },
+          gap: { xs: '40px', sm: '200px' },
           alignItems: 'center',
         }}
       >
