@@ -18,7 +18,9 @@ const Skills: React.FC<Properties> = ({ title }) => {
         alignItems: 'center',
       }}
     >
-      <Typography variant="h1">{title}</Typography>
+      <Typography variant="h1" sx={{ fontSize: { xs: '3rem' } }}>
+        {title}
+      </Typography>
       <Box
         sx={{
           display: 'flex',
@@ -36,8 +38,8 @@ const Skills: React.FC<Properties> = ({ title }) => {
             sx={{
               textTransform: 'capitalize',
               color: 'secondary.main',
-              width: '110px',
-              height: '90px',
+              width: { xs: '55px', sm: '110px' },
+              height: { xs: '45px', sm: '90px' },
             }}
           >
             <Box
@@ -45,6 +47,10 @@ const Skills: React.FC<Properties> = ({ title }) => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                '& img': {
+                  width: { xs: 30, sm: 50 },
+                  height: { xs: 30, sm: 50 },
+                },
               }}
             >
               <Image

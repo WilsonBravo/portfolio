@@ -7,15 +7,19 @@ import { chunkArray } from '@/common/helpers/helpers';
 import { AboutCarouselItem } from './about-carousel-item';
 import { getCardContentList } from '../helpers/helpers';
 import { Card } from '../types/types';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 const About: React.FC = () => {
   const [cardContentList, setCardContentList] = useState<Card[][]>([]);
 
+  const theme = useTheme();
+  const onlySmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   useEffect(() => {
     getCardContentList().then((cardContentList) => {
-      setCardContentList(chunkArray(cardContentList, 3));
+      setCardContentList(chunkArray(cardContentList, onlySmallScreen ? 1 : 3));
     });
-  }, []);
+  }, [onlySmallScreen]);
 
   const carouselItems = cardContentList.map((cardContent, index) => (
     <AboutCarouselItem key={index} cardContent={cardContent} />

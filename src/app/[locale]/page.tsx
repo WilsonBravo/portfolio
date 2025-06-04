@@ -56,8 +56,13 @@ export default function Home() {
           flex: 1,
           display: 'flex',
           flexDirection: 'column',
-          padding: '40px 80px',
+          padding: {
+            md: '40px 80px',
+            sm: '40px 40px',
+            xs: '40px 40px',
+          },
           gap: '80px',
+          overflow: 'hidden',
         }}
       >
         <Description />

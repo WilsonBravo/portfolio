@@ -22,6 +22,7 @@ const Description: React.FC = () => {
       sx={{
         display: 'flex',
         justifyContent: 'center',
+        flexWrap: 'wrap',
         gap: '40px',
       }}
     >

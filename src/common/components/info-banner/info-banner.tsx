@@ -48,12 +48,22 @@ const InfoBanner: React.FC<Properties> = ({ imgUrl, title, listItems }) => {
       <Box
         sx={{
           display: 'flex',
+          flexWrap: 'wrap',
           padding: '20px',
-          height: '260px',
+          height: {
+            xs: '100%',
+            sm: '260px',
+          },
           alignItems: 'center',
         }}
       >
-        <Typography variant="h1" flex={1}>
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: { xs: '3rem' },
+          }}
+          flex={1}
+        >
           {title}
         </Typography>
         <Box
