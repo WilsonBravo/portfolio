@@ -3,6 +3,7 @@ export {
   faBars,
   faEnvelope,
   faFile,
+  faLink,
   faArrowAltCircleLeft,
   faArrowAltCircleRight,
 } from '@fortawesome/free-solid-svg-icons';

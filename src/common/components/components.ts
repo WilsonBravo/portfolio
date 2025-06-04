@@ -21,6 +21,7 @@ export {
   faGithub,
   faLinkedin,
   faFile,
+  faLink,
   faArrowAltCircleLeft,
   faArrowAltCircleRight,
 } from './icon/icon';

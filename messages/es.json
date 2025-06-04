@@ -68,20 +68,27 @@
     "projects": {
       "title": "Proyectos",
       "swipe": "Desliza",
-      "undergraduateThesis": {
-        "imgUrl": "/projects/thesis.png",
-        "title": "undergraduate project",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
-      },
-      "portfolio": {
-        "imgUrl": "/projects/WebPortfolio.png",
-        "title": "portfolio",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
-      },
-      "lifeSwap": {
-        "imgUrl": "/projects/WebDjango.png",
-        "title": "Life Swap",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea accusantium, itaque ullam recusandae vel libero voluptate, molestias deleniti magnam rerum voluptatibus architecto eius facere impedit cum at doloremque nihil!"
+      "items": {
+        "undergraduateThesis": {
+          "imgUrl": "/projects/thesis.png",
+          "title": "Proyecto de Grado",
+          "description": "Aplicación web desarrollada con Django y scripts de python para la detección de violencia en tiempo real. Utiliza técnicas de procesamiento de imágenes y aprendizaje automático para identificar situaciones de riesgo, contribuyendo a la seguridad y bienestar social."
+        },
+        "portfolio": {
+          "imgUrl": "/projects/WebPortfolio.png",
+          "title": "Portafolio",
+          "description": "Aplicación Web desarrollada con NextJS, Material UI y TypeScript. Muestra mis proyectos, habilidades y experiencia profesional, con un diseño moderno y responsivo."
+        },
+        "lifeSwap": {
+          "imgUrl": "/projects/WebDjango.png",
+          "title": "Life Swap",
+          "description": "Aplicación mobil para intercambio de rutinas diarias entre usuarios, desarrollada con NestJS y React Native. Permite a los usuarios compartir y adoptar rutinas de otros, fomentando un estilo de vida saludable y diverso."
+        },
+        "Admin Dashboard": {
+          "imgUrl": "/projects/AdminDashboard.png",
+          "title": "Admin Dashboard",
+          "description": "Aplicación web de administración de datos, desarrollada con NextJS y TypeScript. Permite la gestión eficiente de información, con un enfoque en la usabilidad y la seguridad."
+        }
       }
     }
   },

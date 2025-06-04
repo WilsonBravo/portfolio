@@ -7,6 +7,10 @@ import {
   Typography,
   Fade,
   Tooltip,
+  IconButton,
+  Icon,
+  faFile,
+  faLink,
 } from '@/common/components/components';
 
 const Projects: React.FC = () => {
@@ -21,8 +25,8 @@ const Projects: React.FC = () => {
   useEffect(() => {
     setFade(false);
     setProject({
-      title: t(`${keys[index]}.title`),
-      description: t(`${keys[index]}.description`),
+      title: t(`items.${keys[index]}.title`),
+      description: t(`items.${keys[index]}.description`),
     });
     setTimeout(() => setFade(true), 200);
   }, [index]);
@@ -50,9 +54,9 @@ const Projects: React.FC = () => {
           <Box>
             <DropableCard
               imgList={[
-                t(`${keys[0]}.imgUrl`),
-                t(`${keys[1]}.imgUrl`),
-                t(`${keys[2]}.imgUrl`),
+                t(`items.${keys[0]}.imgUrl`),
+                t(`items.${keys[1]}.imgUrl`),
+                t(`items.${keys[2]}.imgUrl`),
               ]}
               index={index}
               setIndex={setIndex}
@@ -64,10 +68,26 @@ const Projects: React.FC = () => {
         {fade && (
           <Fade in={fade}>
             <Box>
-              <Typography variant="h4" color="primary">
-                {project.title}
-              </Typography>
-              <Typography>{project.description}</Typography>
+              <Box>
+                <Typography variant="h4" color="primary">
+                  {project.title}
+                </Typography>
+                <Typography>{project.description}</Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: '20px',
+                  mt: '20px',
+                }}
+              >
+                <IconButton>
+                  <Icon icon={faFile} />
+                </IconButton>
+                <IconButton>
+                  <Icon icon={faLink} />
+                </IconButton>
+              </Box>
             </Box>
           </Fade>
         )}
