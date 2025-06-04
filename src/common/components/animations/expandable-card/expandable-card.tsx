@@ -7,6 +7,7 @@ import { images } from '@/common/constants/images';
 
 import { Snackbar, Box } from '../../material-ui/material-ui';
 import { Image } from '../../next/next';
+import { useTranslations } from 'next-intl';
 
 type Properties = {
   imgSrc: string;
@@ -22,6 +23,8 @@ const ExpandableCard: React.FC<Properties> = ({
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState(isOpen);
 
+  const t = useTranslations('utils.advices');
+
   useEffect(() => {
     setOpen(isOpen);
   }, [isOpen]);
@@ -33,7 +36,7 @@ const ExpandableCard: React.FC<Properties> = ({
         autoHideDuration={5000}
         anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
         onClose={() => setOpen(false)}
-        message="To get back, click the window anywhere"
+        message={t('close-window')}
         key="pop-up-info-message"
       />
       {isOpen ? (

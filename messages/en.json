@@ -64,6 +64,9 @@
     "paragraph": {
       "more": "show more",
       "less": "show less"
+    },
+    "advices": {
+      "close-window": "Click anywhere to close this window."
     }
   }
 }

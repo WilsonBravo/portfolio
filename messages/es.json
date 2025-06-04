@@ -64,6 +64,9 @@
     "paragraph": {
       "more": "ver más",
       "less": "ver menos"
+    },
+    "advices": {
+      "close-window": "Presiona en cualquier lado para cerrar esta ventana."
     }
   }
 }
