@@ -82,7 +82,7 @@
           "description": "Aplicación Web desarrollada con NextJS, Material UI y TypeScript. Muestra mis proyectos, habilidades y experiencia profesional, con un diseño moderno y responsivo."
         },
         "lifeSwap": {
-          "imgUrl": "/projects/WebDjango.png",
+          "imgUrl": "/projects/life_swap.png",
           "title": "Life Swap",
           "description": "Aplicación mobil para intercambio de rutinas diarias entre usuarios, desarrollada con NestJS y React Native. Permite a los usuarios compartir y adoptar rutinas de otros, fomentando un estilo de vida saludable y diverso."
         },
