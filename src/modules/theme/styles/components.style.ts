@@ -10,6 +10,16 @@ const components: ThemeOptions = {
       fontFamily: 'Winky Rough',
     },
   },
+  components: {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          width: '3rem',
+          height: '3rem',
+        },
+      },
+    },
+  },
 };
 
 export { components };

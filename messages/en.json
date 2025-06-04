@@ -72,7 +72,9 @@
         "undergraduateThesis": {
           "imgUrl": "/projects/thesis.png",
           "title": "Undergraduate Project",
-          "description": "Web application developed with Django and Python scripts for real-time violence detection. It uses image processing and machine learning techniques to identify risky situations, contributing to social safety and well-being."
+          "description": "Web application developed with Django and Python scripts for real-time violence detection. It uses image processing and machine learning techniques to identify risky situations, contributing to social safety and well-being.",
+          "doc": "https://apidspace.javeriana.edu.co/server/api/core/bitstreams/32f6b456-6931-41ef-b5a9-3c9b1109cdbd/content",
+          "repo": "https://github.com/WilsonBravo/Violence_Detection_Public_Repo.git"
         },
         "portfolio": {
           "imgUrl": "/projects/WebPortfolio.png",
@@ -82,7 +84,8 @@
         "lifeSwap": {
           "imgUrl": "/projects/life_swap.png",
           "title": "Life Swap",
-          "description": "Mobile application for exchanging daily routines between users, developed with NestJS and React Native. It allows users to share and adopt routines from others, promoting a healthy and diverse lifestyle."
+          "description": "Mobile application for exchanging daily routines between users, developed with NestJS and React Native. It allows users to share and adopt routines from others, promoting a healthy and diverse lifestyle.",
+          "repo": "https://github.com/WilsonBravo/life-swap.git"
         },
         "Admin Dashboard": {
           "imgUrl": "/projects/AdminDashboard.png",
@@ -99,6 +102,12 @@
     },
     "advices": {
       "close-window": "Click anywhere to close this window."
+    },
+    "urls": {
+      "github": "",
+      "linkedin": "",
+      "email": "",
+      "cv": ""
     }
   }
 }

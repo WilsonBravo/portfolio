@@ -72,7 +72,9 @@
         "undergraduateThesis": {
           "imgUrl": "/projects/thesis.png",
           "title": "Proyecto de Grado",
-          "description": "Aplicación web desarrollada con Django y scripts de python para la detección de violencia en tiempo real. Utiliza técnicas de procesamiento de imágenes y aprendizaje automático para identificar situaciones de riesgo, contribuyendo a la seguridad y bienestar social."
+          "description": "Aplicación web desarrollada con Django y scripts de python para la detección de violencia en tiempo real. Utiliza técnicas de procesamiento de imágenes y aprendizaje automático para identificar situaciones de riesgo, contribuyendo a la seguridad y bienestar social.",
+          "doc": "https://apidspace.javeriana.edu.co/server/api/core/bitstreams/32f6b456-6931-41ef-b5a9-3c9b1109cdbd/content",
+          "repo": "https://github.com/WilsonBravo/Violence_Detection_Public_Repo.git"
         },
         "portfolio": {
           "imgUrl": "/projects/WebPortfolio.png",
@@ -99,6 +101,12 @@
     },
     "advices": {
       "close-window": "Presiona en cualquier lado para cerrar esta ventana."
+    },
+    "urls": {
+      "github": "",
+      "linkedin": "",
+      "email": "",
+      "cv": ""
     }
   }
 }

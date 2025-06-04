@@ -11,12 +11,19 @@ import {
   Icon,
   faFile,
   faLink,
+  faGithub,
 } from '@/common/components/components';
 
 const Projects: React.FC = () => {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const [project, setProject] = useState({ title: '', description: '' });
+  const [project, setProject] = useState({
+    title: '',
+    description: '',
+    doc: '',
+    repo: '',
+    link: '',
+  });
   const [showToolTip, setShowToolTip] = useState(true);
 
   const t = useTranslations('HomePage.projects');
@@ -27,6 +34,15 @@ const Projects: React.FC = () => {
     setProject({
       title: t(`items.${keys[index]}.title`),
       description: t(`items.${keys[index]}.description`),
+      repo: t.has(`items.${keys[index]}.repo`)
+        ? t(`items.${keys[index]}.repo`)
+        : '',
+      doc: t.has(`items.${keys[index]}.doc`)
+        ? t(`items.${keys[index]}.doc`)
+        : '',
+      link: t.has(`items.${keys[index]}.link`)
+        ? t(`items.${keys[index]}.link`)
+        : '',
     });
     setTimeout(() => setFade(true), 200);
   }, [index]);
@@ -77,16 +93,24 @@ const Projects: React.FC = () => {
               <Box
                 sx={{
                   display: 'flex',
-                  gap: '20px',
-                  mt: '20px',
+                  mt: '1.2rem',
                 }}
               >
-                <IconButton>
-                  <Icon icon={faFile} />
-                </IconButton>
-                <IconButton>
-                  <Icon icon={faLink} />
-                </IconButton>
+                {project.doc && (
+                  <IconButton href={project.doc} target="_blank">
+                    <Icon icon={faFile} />
+                  </IconButton>
+                )}
+                {project.repo && (
+                  <IconButton href={project.repo} target="_blank">
+                    <Icon icon={faGithub} />
+                  </IconButton>
+                )}
+                {project.link && (
+                  <IconButton href={project.link} target="_blank">
+                    <Icon icon={faLink} />
+                  </IconButton>
+                )}
               </Box>
             </Box>
           </Fade>
