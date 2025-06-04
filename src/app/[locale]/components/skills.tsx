@@ -3,7 +3,11 @@ import React from 'react';
 import { Box, Typography, Image, Button } from '@/common/components/components';
 import { images } from '@/common/constants/images';
 
-const Skills: React.FC = () => {
+type Properties = {
+  title: string;
+};
+
+const Skills: React.FC<Properties> = ({ title }) => {
   const keys = Object.keys(images.icons) as (keyof typeof images.icons)[];
 
   return (
@@ -14,7 +18,7 @@ const Skills: React.FC = () => {
         alignItems: 'center',
       }}
     >
-      <Typography variant="h1">Skills</Typography>
+      <Typography variant="h1">{title}</Typography>
       <Box
         sx={{
           display: 'flex',

@@ -42,7 +42,32 @@
     },
     "hello": "Hello I am Wilson!",
     "self-description": "I am an Electronics Engineer and Full Stack Developer with experience in data management and problem-solving in software implementation. I am passionate about improving my skills and adding value to every project.",
+    "personal-skills": {
+      "title": "Personal Skills",
+      "skills": {
+        "communication": "Communication",
+        "creativity": "Creativity",
+        "teamwork": "TeamWork",
+        "flexibility": "Flexibility"
+      }
+    },
+    "interests": {
+      "title": "Interests",
+      "items": {
+        "drawing": "Drawing",
+        "music": "Music",
+        "webDevelopment": "Web Development",
+        "cybersecurity": "Cybersecurity",
+        "ai": "Artificial Intelligence",
+        "iot": "Internet of Things"
+      }
+    },
+    "skills": {
+      "title": "Skills"
+    },
     "projects": {
+      "title": "Projects",
+      "swipe": "Swipe",
       "undergraduateThesis": {
         "imgUrl": "/projects/thesis.png",
         "title": "undergraduate project",

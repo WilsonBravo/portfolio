@@ -42,7 +42,32 @@
     },
     "hello": "¡Hola soy Wilson!",
     "self-description": "Soy Ingeniero Electrónico y Desarrollador Full Stack con experiencia en la gestión de datos y solución de problemas en la implementación de software. Me apasiona mejorar mis habilidades y aportar valor en cada proyecto.",
+    "personal-skills": {
+      "title": "Habilidades Personales",
+      "skills": {
+        "communication": "Comunicación",
+        "creativity": "Creatividad",
+        "teamwork": "Trabajo en Equipo",
+        "flexibility": "Flexibilidad"
+      }
+    },
+    "interests": {
+      "title": "Intereses",
+      "items": {
+        "drawing": "Dibujo",
+        "music": "Música",
+        "webDevelopment": "Desarrollo Web",
+        "cybersecurity": "Ciberseguridad",
+        "ai": "Inteligencia Artificial",
+        "iot": "Internet de las Cosas"
+      }
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
     "projects": {
+      "title": "Proyectos",
+      "swipe": "Desliza",
       "undergraduateThesis": {
         "imgUrl": "/projects/thesis.png",
         "title": "undergraduate project",

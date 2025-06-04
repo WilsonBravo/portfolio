@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
 
   return (
     <Box>
-      <Typography variant="h1">Projects</Typography>
+      <Typography variant="h1">{t('title')}</Typography>
       <Box
         sx={{
           mt: '20px',
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
         }}
       >
         <Tooltip
-          title={<Typography variant="h6">{`Swipe ->`}</Typography>}
+          title={<Typography variant="h6">{`${t('swipe')} ->`}</Typography>}
           placement="top"
           open={showToolTip}
           onClose={() => {

@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import {
   Box,
   Footer,
@@ -11,8 +13,33 @@ import { Description } from './components/description';
 import { About } from './components/about';
 import { Projects } from './components/projects';
 import { Skills } from './components/skills';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('HomePage');
+
+  const personalSkills = {
+    title: t('personal-skills.title'),
+    skills: [
+      t('personal-skills.skills.communication'),
+      t('personal-skills.skills.creativity'),
+      t('personal-skills.skills.teamwork'),
+      t('personal-skills.skills.flexibility'),
+    ],
+  };
+
+  const interests = {
+    title: t('interests.title'),
+    items: [
+      t('interests.items.drawing'),
+      t('interests.items.music'),
+      t('interests.items.webDevelopment'),
+      t('interests.items.cybersecurity'),
+      t('interests.items.ai'),
+      t('interests.items.iot'),
+    ],
+  };
+
   return (
     <Box
       sx={{
@@ -37,18 +64,18 @@ export default function Home() {
         <About />
 
         <InfoBanner
-          title="Personal Skills"
-          listItems={['Communication', 'Creativity', 'Teamwork', 'Flexibility']}
+          title={personalSkills.title}
+          listItems={personalSkills.skills}
           imgUrl="/bg/greek_statue.jpg"
         />
 
         <InfoBanner
-          title="Interest"
-          listItems={['Drawing'].concat(Array(4).fill('Drawing'))}
+          title={interests.title}
+          listItems={interests.items}
           imgUrl="/bg/anime.jpg"
         />
 
-        <Skills />
+        <Skills title={t('skills.title')} />
         <Projects />
       </Box>
       <Footer />
